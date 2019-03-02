@@ -14,12 +14,20 @@ var detectNetwork = function(cardNumber) {
 
   // Once you've read this, go ahead and try to implement this function, then return to the console.
   
+     if (Number(cardNumber[0]) === 4 && cardNumber.length === 13 || Number(cardNumber[0]) === 4 && cardNumber.length === 16 || Number(cardNumber[0]) === 4 && cardNumber.length === 19){
+    	return "Visa"
+    } 
     if ( Number(cardNumber[0] + cardNumber[1]) === 38  && cardNumber.length === 14 || Number(cardNumber[0] + cardNumber[1]) === 39  && cardNumber.length === 14) {
     	return "Diner's Club"
-    } else if (Number(cardNumber[0] + cardNumber[1]) === 37 && cardNumber.length === 15 || Number(cardNumber[0] + cardNumber[1]) === 34 && cardNumber.length === 15) {
+    } 
+     if (Number(cardNumber[0] + cardNumber[1]) === 37 && cardNumber.length === 15 || Number(cardNumber[0] + cardNumber[1]) === 34 && cardNumber.length === 15) {
     	return "American Express"
-    } else {return}
-  
+    } 
+    
+     if (Number(cardNumber[0] + cardNumber[1]) === 51  && cardNumber.length === 16 || Number(cardNumber[0] + cardNumber[1]) === 52  && cardNumber.length === 16 || Number(cardNumber[0] + cardNumber[1]) === 53  && cardNumber.length === 16 || Number(cardNumber[0] + cardNumber[1]) === 54  && cardNumber.length === 16 || Number(cardNumber[0] + cardNumber[1]) === 55  && cardNumber.length === 16) {
+    	return "MasterCard"
+    }
+    
 };
 
 
