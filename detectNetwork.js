@@ -16,7 +16,7 @@ var detectNetwork = function(cardNumber) {
   
     if ( Number(cardNumber[0] + cardNumber[1]) === 38  && cardNumber.length === 14 || Number(cardNumber[0] + cardNumber[1]) === 39  && cardNumber.length === 14) {
     	return "Diner's Club"
-    } else if (Number(cardNumber[0] + cardNumber[1]) === 33 && cardNumber.length === 15 || Number(cardNumber[0] + cardNumber[1]) === 34 && cardNumber.length === 15) {
+    } else if (Number(cardNumber[0] + cardNumber[1]) === 37 && cardNumber.length === 15 || Number(cardNumber[0] + cardNumber[1]) === 34 && cardNumber.length === 15) {
     	return "American Express"
     } else {return}
   
