@@ -14,7 +14,7 @@ var detectNetwork = function(cardNumber) {
 
   // Once you've read this, go ahead and try to implement this function, then return to the console.
   
-     if (Number(cardNumber[0]) === 4 && cardNumber.length === 13 || Number(cardNumber[0]) === 4 && cardNumber.length === 16 || Number(cardNumber[0]) === 4 && cardNumber.length === 19){
+     if (Number(cardNumber[0]) === 4 && (cardNumber.length === 13 || cardNumber.length === 16 || cardNumber.length === 19)){
     	return "Visa"
     } 
     if ( Number(cardNumber[0] + cardNumber[1]) === 38  && cardNumber.length === 14 || Number(cardNumber[0] + cardNumber[1]) === 39  && cardNumber.length === 14) {
