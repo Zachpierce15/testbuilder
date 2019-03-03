@@ -13,7 +13,9 @@ var detectNetwork = function(cardNumber) {
   // The American Express network always starts with a 34 or 37 and is 15 digits long
 
   // Once you've read this, go ahead and try to implement this function, then return to the console.
-  
+     if((Number(cardNumber[0] + cardNumber[1] + cardNumber[2] + cardNumber[3] + cardNumber[4] + cardNumber[5]) >= 622126 && Number(cardNumber[0] + cardNumber[1] + cardNumber[2] + cardNumber[3] + cardNumber[4] + cardNumber[5]) <= 622925) || (Number(cardNumber[0] + cardNumber[1] + cardNumber[2]) >= 624 && Number(cardNumber[0] + cardNumber[1] + cardNumber[2]) <= 626) || (Number(cardNumber[0] + cardNumber[1] + cardNumber[2] + cardNumber[3]) >=6282 && Number(cardNumber[0] + cardNumber[1] + cardNumber[2] + cardNumber[3]) <= 6288) && (cardNumber.length >=16 && cardNumber.length <=19)) {
+   		return "China UnionPay"
+   	}
      if (Number(cardNumber[0]) === 4 && (cardNumber.length === 13 || cardNumber.length === 16 || cardNumber.length === 19)){
     	return "Visa"
     } 
@@ -33,4 +35,8 @@ var detectNetwork = function(cardNumber) {
     if ((Number(cardNumber[0] + cardNumber[1] + cardNumber[2] + cardNumber[3]) === 5018 || Number(cardNumber[0] + cardNumber[1] + cardNumber[2] + cardNumber[3]) === 5020 || Number(cardNumber[0] + cardNumber[1] + cardNumber[2] + cardNumber[3]) === 5038 || Number(cardNumber[0] + cardNumber[1] + cardNumber[2] + cardNumber[3]) === 6304) && (cardNumber.length === 12 || cardNumber.length === 13 || cardNumber.length === 14 || cardNumber.length === 15 || cardNumber.length === 16 || cardNumber.length === 17 || cardNumber.length === 18 || cardNumber.length === 19)) {
       return "Maestro"
     }
+    if ((Number(cardNumber[0] + cardNumber[1] + cardNumber[2] + cardNumber[3] + cardNumber[4] + cardNumber[5]) === 564182 || Number(cardNumber[0] + cardNumber[1] + cardNumber[2] + cardNumber[3] + cardNumber[4] + cardNumber[5]) === 633110 || Number(cardNumber[0] + cardNumber[1] + cardNumber[2] + cardNumber[3] === 4903) || Number(cardNumber[0] + cardNumber[1] + cardNumber[2] + cardNumber[3] === 4905) || Number(cardNumber[0] + cardNumber[1] + cardNumber[2] + cardNumber[3]) === 4911 || Number(cardNumber[0] + cardNumber[1] + cardNumber[2] + cardNumber[3]) === 4936 || Number(cardNumber[0] + cardNumber[1] + cardNumber[2] + cardNumber[3]) === 6333 || Number(cardNumber[0] + cardNumber[1] + cardNumber[2] + cardNumber[3]) === 6759) && (cardNumber.length === 16 || cardNumber.length === 18 || cardNumber.length === 19)) {
+return "Switch"
+     	}
+
 };
