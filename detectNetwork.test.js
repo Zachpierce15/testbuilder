@@ -107,15 +107,15 @@ describe('MasterCard', function() {
   //   http://chaijs.com/api/bdd/
   var expect = chai.expect;
  
-  it(FILL_ME_IN, function() {
+  it("This checks if card# equal the right card", function() {
     expect(detectNetwork('5112345678901234')).to.equal('MasterCard');
   });
  
-  it(FILL_ME_IN, function() {
+  it("This checks if card# equal the right card", function() {
     expect(detectNetwork('5212345678901234')).to.equal('MasterCard');
   });
  
-  it(FILL_ME_IN, function() {
+  it("This checks if card# equal the right card", function() {
     expect(detectNetwork('5312345678901234')).to.equal('MasterCard');
   });
  
