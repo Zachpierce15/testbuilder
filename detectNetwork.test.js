@@ -150,6 +150,12 @@ describe('Discover', function() {
   it('has a prefix of 6011 and a length of 19' , function() {
     expect(detectNetwork("6011123456789098765")).to.equal("Discover");
   });
+  it("has a prefix of 65 and a length of 16" , function() {
+    expect(detectNetwork("6512345678901234")).to.equal("Discover");
+  });
+  it("has a prefix of 65 and a length of 19" , function() {
+    expect(detectNetwork("6534567890123456789")).to.equal("Discover");
+  });
   for (var i = 644; i <=649; i++) {
     (function(i) {
       it("has a prefix of " + i + " and a length of 16", function() {
