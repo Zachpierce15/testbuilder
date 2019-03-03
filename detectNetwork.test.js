@@ -320,6 +320,38 @@ describe('China UnionPay', function() {
         });
       })(prefix)
     }
+     for (var prefix2 = 624; prefix2 <= 626; prefix2++) {
+      (function(prefix2) {
+        it("has a prefix of " + prefix2 + " and a length of 16" , function() {
+          expect(detectNetwork(prefix2.toString() + "1234567890123")).to.equal("China UnionPay");
+        });
+         it("has a prefix of " + prefix2 + " and a length of 17" , function() {
+          expect(detectNetwork(prefix2.toString() + "12345678901234")).to.equal("China UnionPay");
+        });
+          it("has a prefix of " + prefix2 + " and a length of 18" , function() {
+          expect(detectNetwork(prefix2.toString() + "123456789012345")).to.equal("China UnionPay");
+        });
+           it("has a prefix of " + prefix2 + " and a length of 19" , function() {
+          expect(detectNetwork(prefix2.toString() + "1234567890123456")).to.equal("China UnionPay");
+        });
+      })(prefix2)
+     }
+       for (var prefix3 = 6282; prefix3 <= 6288; prefix3++) {
+        (function(prefix3) {
+           it("has a prefix of " + prefix3 + " and a length of 16" , function() {
+          expect(detectNetwork(prefix3.toString() + "123456789012")).to.equal("China UnionPay");
+        });
+              it("has a prefix of " + prefix3 + " and a length of 17" , function() {
+          expect(detectNetwork(prefix3.toString() + "1234567890123")).to.equal("China UnionPay");
+        });
+                 it("has a prefix of " + prefix3 + " and a length of 18" , function() {
+          expect(detectNetwork(prefix3.toString() + "12345678901234")).to.equal("China UnionPay");
+        });
+                it("has a prefix of " + prefix3 + " and a length of 19" , function() {
+          expect(detectNetwork(prefix3.toString() + "123456789012345")).to.equal("China UnionPay");
+        });
+        })(prefix3)
+       }
   })
  
 
