@@ -151,19 +151,19 @@ describe('Maestro', function() {
   var expect = chai.expect;
 
   it("This checks if card# equal the right card" , function() {
-     expect(detectNetwork("50183456786754")).to.equal("Maestro")
+     expect(detectNetwork("50183456786754")).to.equal("Maestro");
   });
 
   it.("This checks if card# equal the right card" , function() {
-    expect(detectNetwork("502012345678")).to.equal("Maestro")
+    expect(detectNetwork("502012345678")).to.equal("Maestro");
   });
 
    it.("This checks if card# equal the right card" , function() {
-    expect(detectNetwork("5038123434567")).to.equal("Maestro")
+    expect(detectNetwork("5038123434567")).to.equal("Maestro");
   });
 
     it.("This checks if card# equal the right card" , function() {
-    expect(detectNetwork("6304123456789098765")).to.equal("Maestro")
+    expect(detectNetwork("6304123456789098765")).to.equal("Maestro");
   });
 });
 
