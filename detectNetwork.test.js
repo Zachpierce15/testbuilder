@@ -153,8 +153,129 @@ describe('Maestro', function() {
   it("This checks if card# equal the right card" , function() {
      expect(detectNetwork("501823456789")).to.equal("Maestro");
   });
+
   it("This checks if card# equal the right card" , function() {
     expect(detectNetwork("5018123456789")).to.equal("Maestro");
+  });
+
+  it("This checks if card# equal the right card" , function() {
+    expect(detectNetwork("50181234567890")).to.equal("Maestro");
+  });
+
+  it("This checks if card# equal the right card" , function() {
+    expect(detectNetwork("501812345678901")).to.equal("Maestro");
+  });
+
+  it("This checks if card# equal the right card" , function() {
+    expect(detectNetwork("5018123456789098")).to.equal("Maestro");
+  });
+
+  it("This checks if card# equal the right card" , function() {
+    expect(detectNetwork("50181234567890987")).to.equal("Maestro");
+  });
+
+  it("This checks if card# equal the right card" , function() {
+    expect(detectNetwork("501812345678901234")).to.equal("Maestro");
+  });
+
+  it("This checks if card# equal the right card" , function() {
+    expect(detectNetwork("5018123456789012345")).to.equal("Maestro");
+  });
+
+    it("This checks if card# equal the right card" , function() {
+     expect(detectNetwork("502023456789")).to.equal("Maestro");
+  });
+
+  it("This checks if card# equal the right card" , function() {
+    expect(detectNetwork("5020123456789")).to.equal("Maestro");
+  });
+
+  it("This checks if card# equal the right card" , function() {
+    expect(detectNetwork("50201234567890")).to.equal("Maestro");
+  });
+
+  it("This checks if card# equal the right card" , function() {
+    expect(detectNetwork("502012345678901")).to.equal("Maestro");
+  });
+
+  it("This checks if card# equal the right card" , function() {
+    expect(detectNetwork("5020123456789098")).to.equal("Maestro");
+  });
+
+  it("This checks if card# equal the right card" , function() {
+    expect(detectNetwork("50201234567890987")).to.equal("Maestro");
+  });
+
+  it("This checks if card# equal the right card" , function() {
+    expect(detectNetwork("502012345678901234")).to.equal("Maestro");
+  });
+
+  it("This checks if card# equal the right card" , function() {
+    expect(detectNetwork("5020123456789012345")).to.equal("Maestro");
+  });
+
+    it("This checks if card# equal the right card" , function() {
+     expect(detectNetwork("53823456789")).to.equal("Maestro");
+  });
+
+  it("This checks if card# equal the right card" , function() {
+    expect(detectNetwork("538123456789")).to.equal("Maestro");
+  });
+
+  it("This checks if card# equal the right card" , function() {
+    expect(detectNetwork("5381234567890")).to.equal("Maestro");
+  });
+
+  it("This checks if card# equal the right card" , function() {
+    expect(detectNetwork("53812345678901")).to.equal("Maestro");
+  });
+
+  it("This checks if card# equal the right card" , function() {
+    expect(detectNetwork("538123456789098")).to.equal("Maestro");
+  });
+
+  it("This checks if card# equal the right card" , function() {
+    expect(detectNetwork("5381234567890987")).to.equal("Maestro");
+  });
+
+  it("This checks if card# equal the right card" , function() {
+    expect(detectNetwork("53812345678901234")).to.equal("Maestro");
+  });
+
+  it("This checks if card# equal the right card" , function() {
+    expect(detectNetwork("538123456789012345")).to.equal("Maestro");
+  });
+
+     it("This checks if card# equal the right card" , function() {
+     expect(detectNetwork("630423456789")).to.equal("Maestro");
+  });
+
+  it("This checks if card# equal the right card" , function() {
+    expect(detectNetwork("6304123456789")).to.equal("Maestro");
+  });
+
+  it("This checks if card# equal the right card" , function() {
+    expect(detectNetwork("63041234567890")).to.equal("Maestro");
+  });
+
+  it("This checks if card# equal the right card" , function() {
+    expect(detectNetwork("630412345678901")).to.equal("Maestro");
+  });
+
+  it("This checks if card# equal the right card" , function() {
+    expect(detectNetwork("6304123456789098")).to.equal("Maestro");
+  });
+
+  it("This checks if card# equal the right card" , function() {
+    expect(detectNetwork("63041234567890987")).to.equal("Maestro");
+  });
+
+  it("This checks if card# equal the right card" , function() {
+    expect(detectNetwork("630412345678901234")).to.equal("Maestro");
+  });
+
+  it("This checks if card# equal the right card" , function() {
+    expect(detectNetwork("6304123456789012345")).to.equal("Maestro");
   });
 });
 
