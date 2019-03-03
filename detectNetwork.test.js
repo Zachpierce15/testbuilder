@@ -148,5 +148,10 @@ describe('Discover', function() {
 
 describe('Maestro', function() {
   // Write full test coverage for the Maestro card
+  var expect = chai.expect;
+
+  it("This checks to see if Maestro works" , function() {
+     expect(detectNetwork("50183456786754")).to.equal("Maestro")
+  })
 });
 
