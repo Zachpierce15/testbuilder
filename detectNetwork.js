@@ -27,7 +27,7 @@ var detectNetwork = function(cardNumber) {
      if (Number(cardNumber[0] + cardNumber[1]) === 51  && cardNumber.length === 16 || Number(cardNumber[0] + cardNumber[1]) === 52  && cardNumber.length === 16 || Number(cardNumber[0] + cardNumber[1]) === 53  && cardNumber.length === 16 || Number(cardNumber[0] + cardNumber[1]) === 54  && cardNumber.length === 16 || Number(cardNumber[0] + cardNumber[1]) === 55  && cardNumber.length === 16) {
     	return "MasterCard"
     }
-    if ( (Number(cardNumber[0] + cardNumber[1] + cardNumber[2] + cardNumber[3]) === 6011 || cardNumber[0] + cardNumber[1] + cardNumber[2] + cardNumber[3] + cardNumber[4] + cardNumber[5] + cardNumber[6] === "644-649" || Number(cardNumber[0] + cardNumber[1])===65) && (cardNumber.length === 16 || cardNumber.length === 19)) {
+    if ( (Number(cardNumber[0] + cardNumber[1] + cardNumber[2] + cardNumber[3]) === 6011 || (Number(cardNumber[0] + cardNumber[1] + cardNumber[2])  >= 644 && Number(cardNumber[0] + cardNumber[1] + cardNumber[2])  <= 649) || Number(cardNumber[0] + cardNumber[1])===65) && (cardNumber.length === 16 || cardNumber.length === 19)) {
       return "Discover"
     }
     if ((Number(cardNumber[0] + cardNumber[1] + cardNumber[2] + cardNumber[3]) === 5018 || Number(cardNumber[0] + cardNumber[1] + cardNumber[2] + cardNumber[3]) === 5020 || Number(cardNumber[0] + cardNumber[1] + cardNumber[2] + cardNumber[3]) === 5038 || Number(cardNumber[0] + cardNumber[1] + cardNumber[2] + cardNumber[3]) === 6304) && (cardNumber.length === 12 || cardNumber.length === 13 || cardNumber.length === 14 || cardNumber.length === 15 || cardNumber.length === 16 || cardNumber.length === 17 || cardNumber.length === 18 || cardNumber.length === 19)) {
